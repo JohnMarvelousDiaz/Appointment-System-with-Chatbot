@@ -1,0 +1,354 @@
+.frontbody {
+    height: 100vh;
+    width: 100vw;
+    /*overflow-y: hidden;*/
+    background-image: url('../images/bg.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+.animation {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bg-maroon {
+    background-color: rgb(105, 16, 16);
+}
+
+.height {
+    height: 10vh;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.logosize {
+    height: 3.5vw;
+    width: 7.5vh;
+}
+
+.navbar-margin {
+    margin-left: 2vw;
+    text-decoration: none;
+    
+}
+
+.display-none {
+    text-decoration: none;
+}
+
+.nav-margin {
+    margin-right: 4vw;
+}
+
+.paragraphfront {
+    position: relative;
+    color: white;
+    width: 45vw;
+    text-align: left;
+    left: 8vw;
+    top: -10vh;
+}
+
+.paragraphfront p {
+    text-align: justify;
+}
+
+.about p {
+    text-align: justify;
+}
+
+
+.about {
+    position: relative;
+    color: white;
+    width: 85vw;
+    height: 100vh;
+    left: 8vw;
+    top: 60vh !important;
+    padding-bottom: 20vh;
+    padding-top: 20vh;
+    
+}
+.aboutL{
+    position: relative;
+    color: white;
+    text-align: left;
+    width: 40vw;
+    float: left;
+    top: -85vh;
+    left: -13vh ;
+}
+.aboutR{
+    position: relative;
+    color: white;
+    width: 40vw;
+    top: -80vh;
+    text-align: center;
+    right: 20vh;
+    float: right;
+}
+
+.aboutR img{
+    position: relative;
+    width: 10vw;
+    height: 22vh;
+    max-width: 100%;
+    max-height: 100%; 
+}
+.aboutR h2{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%; 
+    text-align: center;
+}
+.aboutR span{
+    position: relative;
+    display: inline-block;
+    width: 30vw;
+    text-align: left;
+}
+.aboutR .submitAppointment{
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #00000000;
+    border: 3px solid #EC5800;
+    font-size: 1.75em;
+    border-radius: .25em;
+    color: #EC5800;
+    margin-top: -5vh;
+}
+.howitworks {
+    position: relative;
+    color: white;
+    width: 70vw;
+    height: 100vh;
+    text-align: center;
+    left: 15vw;
+    top: 70vh;
+    padding-bottom: 20vh;
+    padding-top: 20vh;
+}
+
+.howitworks1 .steps{
+    border: 3px solid white;
+    border-radius: 2em;
+    width: 60vw;
+    height: 50vh;
+    position: relative;
+    margin: 0 auto;
+}
+
+.howitworks1 p{
+    position: relative;
+    display: block;
+    margin-top: 2vh;
+    font-size: 1.5em;
+}
+.howitworks1 span{
+    display: inline-block;
+    width: 50vw;
+}
+.appointment{
+    position: relative;
+    color: white;
+    width: 45vw;
+    text-align: left;
+    left: 8vw;
+    top: 70vh;
+    padding-bottom: 20vh;
+    padding-top: 20vh;
+}
+
+.bot-size {
+    position: fixed;
+    width: 6vw;
+    height: 12vh;
+    top: 85vh;
+    left: 92vw;
+}
+
+.nav-options a{
+    text-decoration: none;
+}
+
+.nav-options .btnNav{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;   
+}
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .paragraphfront  {
+        width: 85%;
+        margin-top: -90px;
+    }
+
+    .aboutL {
+        font-size: 11px;
+        width: 60%;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+
+    .aboutR img {
+        height: 120px;
+        width: 120px;
+       
+    }
+
+    .aboutR {
+       /*  border: 2px solid white; */
+        width: 40%;
+        margin-top: -600px;
+        float: right;
+        margin-right: -69px;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .aboutR h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .aboutR .submitAppointment {
+        padding: 12px;
+        width: 140px;
+        font-size: 13px;
+    }
+
+    .howitworks1 .steps{
+        width: 128%;
+        margin-left: -40px;
+        height: 500px;
+    }
+
+    .howitworks1 .steps .scheds {
+        margin-top: 25px;
+    }
+    .appointment table{
+        width: 100px;
+    }
+
+    .row img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .row .col-sm-4 {
+/*         border: 2px solid white; */
+        width: 50%;
+    }
+
+    .row .col-sm-4 .custom-modal{
+/*      border: 2px solid white; */
+        width: 10%;
+        border: 5px solid white;
+    }
+
+    .logosize {
+        height: 30px;
+        width: 30px;
+    }
+
+    .modal-content {
+        margin-left: 62px;
+        width: 60%;
+        margin-top: 150px;
+      }
+
+    .modal-header {
+        background: #e35c38; /* Change the header background color */
+        color: white; /* Change the header text color */
+        border: none; /* Remove header border */
+        width: 400px;
+      }
+    
+      
+      .modal-body {
+        /* Add custom styles to the Modal body */
+        width: 390px;
+        height: 300px;
+        background-color:#f8f9fa;
+      }
+
+      .each-slide-effect {
+        height: 200px;
+        width: 390px;
+        background-image: cover;
+      }
+
+      .each-slide-effect > div {
+        height: 220px;
+        width: 390px;
+        background-image: cover;
+      }
+
+      .chatbot-toggler {
+        background: transparent;
+      }
+
+      .chatbot {
+        margin-right: 10px;
+        height: 70%;
+        margin-bottom: 20px;
+      }
+
+      .chatbot span {
+        margin-right: 10px;
+      }
+
+    .navbar {
+        
+    }
+
+    .nav-options {
+       
+    }
+
+   
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 13px;
+    }
+
+    .navbar {
+       
+    }
+
+    .nav-options {
+       
+    }
+
+   
+}  

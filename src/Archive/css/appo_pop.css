@@ -1,0 +1,208 @@
+.selected-appointment-details .one p {
+    display: flex;
+}
+.selected-appointment-details .two p {
+    display: inline;
+    margin-right: 45px;
+}
+.selected-appointment-details .three p {
+    display: inline;
+    margin-right: 45px;
+}
+
+.selected-appointment-details .four {
+    border: 2px solid #000;
+}
+.appointment-container table {
+    margin: 10px;
+    font-size: 12px;
+}
+
+.selected-appointment-details h2 {
+  border-bottom: 2px solid black;
+}
+
+.view {
+    padding: 5px 15px 5px 15px;
+}
+.accept {
+    padding: 5px;
+
+}
+.decline {
+    padding: 5px;
+
+}
+
+.func {
+    display: inline-flex;
+}
+
+.accept-button {
+    background-color: #33B864;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .accept-button.disabled {
+    background-color: #ccc; /* Disabled button style */
+    cursor: not-allowed;
+  }
+
+  /* CSS for the View button */
+.view-button {
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding to the button */
+    margin: 5px; /* Add margin to separate buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Add border radius for rounded corners */
+  }
+  
+  .view-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+  
+  
+  /* CSS for the Decline button */
+  .decline-button {
+    background-color: #DC3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .decline-button.disabled {
+    background-color: #ccc; /* Disabled button style */
+    cursor: not-allowed;
+  }
+
+  .appointment-container h1 {
+    color: #FFF;
+  }
+
+  .appointment-container .nappo {
+    color: #FFF;
+  }
+
+/* Add CSS for fixed position at the bottom */
+.pagination {
+  position: fixed;
+  bottom: 0;
+  left: 55%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  padding: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.pagination ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pagination button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+.appointment-details {
+  display: flex; /* Use flex display to arrange the "who" and "one" divs horizontally */
+  justify-content: space-between; /* Distribute space between "who" and "one" divs */
+  align-items: flex-start; /* Vertically center the content in the "who" and "one" divs */
+}
+
+
+.who {
+  flex: 1; /* Allow "who" to take up available space on the left */
+  text-align: left;
+}
+
+.one {
+  flex: 2; /* Allow "one" to take up available space on the right */
+  text-align: right; /* Align text within "one" div to the right */
+}
+
+
+.when {
+  flex: 1; /* Allow "who" to take up available space on the left */
+  text-align: left;
+}
+
+.two {
+  flex: 2; /* Allow "one" to take up available space on the right */
+  text-align: left; /* Align text within "one" div to the right */
+}
+
+.appointment-container .trash {
+  padding: 10px;
+  background-color: #DC3545;
+  border: transparent;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.appoint {
+  list-style: none; /* Remove list-style bullets/numbers if needed */
+  right: 120vh;
+  width: 140px;
+  padding: 10px;
+  float: right;
+  background-color: #0056b3;
+  margin-right: 3vh;
+  border-radius: 10px;
+  transition: .3s ease-in-out;
+}
+
+.appoint:hover {
+  background-color: #ccc;
+
+}
+
+
+.appoint li{
+  float: right;
+  list-style: none; /* Remove list-style bullets/numbers if needed */
+  margin-right: 20vh;
+}
+
+.appoint a{
+  text-decoration: none;
+  color: #fff;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.appoint a:hover {
+  color: #444;
+}
+
+
+
+
+
+
+
+  
+  
+  
+  
+  

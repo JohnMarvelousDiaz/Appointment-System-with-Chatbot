@@ -1,0 +1,67 @@
+/* This CSS will adjust the size of the Modal components */
+.modal-dialog {
+    position: relative;
+    top: 7%;
+    right: 16%;
+    transform: translate(-50%, -50%);
+  }
+
+.modal-content {
+    width: 60%; /* Adjust the width as needed */
+    max-width: 500px; /* Set a max-width for responsiveness */
+  }
+  
+  .modal-header {
+    background: #e35c38; /* Change the header background color */
+    color: white; /* Change the header text color */
+    border: none; /* Remove header border */
+    width: 1000px;
+  }
+
+  
+  .modal-body {
+    /* Add custom styles to the Modal body */
+    width: 1000px;
+    height: 580px;
+    background-color:#f8f9fa;
+  }
+  
+  .modal-footer.custom-footer {
+    background-color: #007BFF; /* Change the footer background color */
+    border: none; /* Remove footer border */
+    width: 1000px;
+  }
+  /* Adjust the close button styles */
+  .close {
+    color: white; /* Change the close button color */
+  }
+
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 520px;
+  }
+  
+  .each-slide-effect span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,588 @@
+/* Main container-appo for the dashboard */
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Space between navigation and header */
+    /*background-image: url(../img/bg.png);*/
+    background-size: cover;
+  }
+  
+  
+  .dashboard h3 {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  
+  /* Navigation menu (Left Side) */ 
+  .admin-panel {
+    background-color: rgba(105, 16, 16, 0.637);;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+  }
+  
+  .admin-panel .profile {
+    width: 120px;
+    height: 120px;
+    background-color: #fff; /* Background color for the profile */
+    border-radius: 50%; /* Create a circular profile image */
+    margin-bottom: 20px;
+    margin-left: 60px;
+    align-items: center;
+  }
+  
+  .menu-heading {
+    margin-bottom: 20px;
+    font-size: 18px;
+    left: 0;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .menu-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: none;
+    color: #444;
+    cursor: pointer; 
+    font-size: 16px; 
+    text-align: left; /* Align text to the left */
+  }
+  
+  
+  
+  .admin-panel #schedule {
+    padding: 20px 103px;
+    background-color:#fff;
+    margin-left: -20px;
+  
+  }
+  
+  .admin-panel #appointment {
+    padding: 20px 92px;
+    background-color: #FFF;
+    margin-left: -20px;
+  
+  }
+  
+  .admin-panel #setting {
+    padding: 20px 108px;
+    background-color: #fff;
+    margin-left: -20px;
+  
+  }
+  
+  .menu-button:hover {
+    background-color: #fff; /* Background color when hovered */
+  }
+  
+  Router li{
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Add these styles to your CSS */
+  .menu-list {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+  }
+  
+    .menu-list .dash {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    font-weight: bold;
+    width: 160px; /* Adjust the width as needed */
+    min-width: 250px; /* Ensure a minimum width */
+    max-width: 250px; /* Ensure a maximum width */
+    /* Other styling properties */
+    padding: 15px; /* Optional padding to control the content spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    /* Additional styles as needed */
+    background-color: #fff;
+    height: 30px;
+    font-size: 12px;
+    margin: 0 10px 20px 0;
+    margin-left: -20px;
+    color: #444; /* Inherit text color */
+  }
+  
+  .menu-list .dash a {
+    text-decoration: none;
+
+  }
+  
+  .menu-list .appo {
+    display: flex;
+    align-items: center;
+    width: 200px; /* Adjust the width as needed */
+    min-width: 250px; /* Ensure a minimum width */
+    max-width: 250px; /* Ensure a maximum width */
+    /* Other styling properties */
+    padding: 15px; /* Optional padding to control the content spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    /* Additional styles as needed */
+    background-color:#fff;
+    height: 10px;
+    font-size: 12px;
+    margin: 0 10px 20px 0;
+    font-weight: bold;
+    margin-left: -20px;
+    align-items: center;
+    color: #444;
+    transition: .3s ease-in-out;
+  }
+
+  .menu-list .appo:hover {
+    background-color: #888;
+    color: #fff;
+  }
+  
+  .menu-list .appo a {
+    text-decoration: none;
+    color: #444; /* Inherit text color */
+    padding-right: 120px;
+  }
+
+  .menu-list .appo a:hover {
+    text-decoration: none;
+    color: #fff; /* Inherit text color */
+
+  }
+  
+  
+  .menu-list .sched {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 200px; /* Adjust the width as needed */
+    min-width: 250px; /* Ensure a minimum width */
+    max-width: 250px; /* Ensure a maximum width */
+    /* Other styling properties */
+    padding: 15px; /* Optional padding to control the content spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    /* Additional styles as needed */
+    background-color:#fff;
+    height: 20px;
+    font-size: 12px;
+    margin: 0 10px 20px 0;
+    margin-left: -20px;
+    transition: .3s ease-in-out;
+  }
+
+  .menu-list .sched:hover {
+    background-color: #888;
+    color: #fff;
+  }
+  
+  .menu-list .sched a {
+    text-decoration: none;
+    padding-right: 120px;
+    color: #444;
+  }
+  .menu-list .sched a:hover {
+    text-decoration: none;
+    color: #fff; /* Inherit text color */
+  }
+  
+  .menu-list .sett {
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 200px; /* Adjust the width as needed */
+    min-width: 250px; /* Ensure a minimum width */
+    max-width: 250px; /* Ensure a maximum width */
+    /* Other styling properties */
+    padding: 15px; /* Optional padding to control the content spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    /* Additional styles as needed */
+    background-color:#fff;
+    height: 10px;
+    font-size: 16px;
+    margin: 0 10px 20px 0;
+    margin-left: -20px;
+    color: #444;
+    transition: .3s ease-in-out;
+  }
+
+  .menu-list .sett:hover {
+    background-color: #888;
+    color: #fff;
+  }
+  
+  .menu-list .sett button {
+    padding-right: 120px;
+    text-decoration: none;
+    color: #444;
+
+  }
+
+  .menu-list .sett button:hover {
+    text-decoration: none;
+    color: #fff; /* Inherit text color */
+  }
+  
+  /* Add this CSS code to your AdminPanel.css file */
+  
+  /* Style for the menu container-appo */
+  .admin-panel nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for each menu item */
+  .menu-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: left;
+    text-decoration: none; /* Remove underline from links */
+    list-style: none; /* Remove list bullet points */
+  }
+  
+  /* Style for icons within menu items */
+  .menu-button svg {
+    margin-right: 10px; /* Adjust spacing between icon and text */
+  }
+  
+  
+  
+  
+  /* AdminPanel.css */
+  
+  .content { 
+    flex-direction: column;
+    flex: 2; /* Take up available space */
+    background-color: #fff; /* Background color for the header */
+    display: flex;
+    width: 100%;
+    height: 15vh;
+  }
+
+  .appointment-container .table {
+    margin: 10px;
+  }
+
+ /* Style for the Selected Appointment Details */
+.selected-appointment-details {
+  position: fixed; /* Positioning type */
+  top: 50%; /* Position from the top of the viewport */
+  left: 50%; /* Position from the left of the viewport */
+  transform: translate(-50%, -50%); /* Center the element */
+  background-color: #fff; /* Background color */
+  padding: 20px; /* Padding for content inside */
+  border: 1px solid #ccc; /* Border for the element */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a popup effect */
+  z-index: 9999; /* Ensure it's above other content */
+  max-width: 80%; /* Maximum width for the popup */
+  max-height: 80%; /* Maximum height for the popup */
+  overflow: auto; /* Enable scrolling if content overflows */
+}
+
+/* Close button style */
+.selected-appointment-details button {
+  background-color: #f00; /* Red background color */
+  color: #fff; /* White text color */
+  padding: 5px 10px; /* Padding for the close button */
+  border: none; /* No border */
+  cursor: pointer; /* Cursor style */
+}
+
+
+  
+  .container-appo .main-appo  {
+    margin: 80px 20px 20px 20px;
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.445); /* RGBA color with 50% opacity */
+  }
+  
+  /* Header (Right Side) */
+  
+  /* Logo container-appo */
+  
+  
+  .profile img {
+    height: 120px;
+    width: 120px;
+  }
+
+  /* CSS file */
+.custom-event {
+    font-size: 19px; /* Adjust the font size as needed */
+    /* Other custom styles */
+  }
+
+  .fc .fc-event {
+    font-size: 16px !important;
+  }
+  
+  
+  
+  /* CSS */
+  .logo-text-container-appo {
+    display: flex;
+    align-items: center; /* Vertically center align logo and text */
+    gap: 20px; /* Adjust the gap between logo and text as needed */
+  }
+  
+  .logo-container-appo img {
+    width: 70px; /* Adjust the width as needed */
+    height: 70px; /* Adjust the height as needed */
+  }
+  
+  .text-container-appo {
+    color: #333; /* Text color for the header */
+    border-bottom: 2px solid #444;
+    
+  }
+  
+  .text-container-appo h1 {
+    font-size: 18px;
+    font-weight: 350;
+    margin: 0; /* Remove default margins for h1 elements */
+  }
+  .text-container-appo .second-h1 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-right: 25px; /* Remove default margins for h1 elements */
+  }
+  
+  .togg {
+    margin: 0;
+    padding: 0 ;
+    top: 0;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  
+  li {
+    list-style: none;
+  }
+  
+  .upperheader {
+    display: flex;
+    border-bottom: 1px solid #444;
+    padding: 20px;
+    height: 7vh;
+    width: 100%;
+  }
+  
+  /* CSS for horizontal line below text-container-appo */
+  hr {
+    border-top: 1px solid #333; /* Adjust the line color and style as needed */
+    width: max-content;
+    display: flex;
+    margin-top: 120px; /* Adjust the spacing between the text-container-appo and line */
+  }
+  
+  .bg {
+    background-color: #fff; /* Background color for the header */
+    align-items: center;
+    position: absolute; /* Position the image absolutely within the header */
+    z-index: 0;
+  }
+  
+  .container-appo {
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  
+    
+  
+  .main-appo   .cm,.pp,.ms,.fa{
+    border: 3px solid #fff;
+  }
+  
+  .main-appo   .info {
+    bottom: 0;
+    background-color: rgb(158, 10, 10);
+    height: 35px;
+  }
+  .main-appo   .info p{
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    font-weight: bold;
+  }
+  
+  .container-appo .greport {
+    border: 2px solid #FFF;
+    height: 100px;
+    text-align: center;
+    margin: 15px;
+    height: 390px;
+  }
+
+  /* Dropdown container-appo styles */
+.dropdown-container-appo {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown button styles */
+  .dropdown-button {
+    background-color: #fff;
+    color: #444;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown content container-appo styles */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* White background */
+    color: #444; /* #444 text color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    margin-left: -10px;
+    border: 2px solid red;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  /* Show the dropdown content when the dropdown button is hovered */
+  .dropdown-container-appo:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+  }
+  
+  .main-appo {
+    background-color: #fffbfb;
+    width: 180vh;
+    margin: 20px;
+  }
+
+  .appointment-holder {
+    display: flex;
+    color:#000;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    justify-content: space-between;
+    text-align: left;
+    border: 2px solid black;
+  }
+  
+  .appointment-holder span {
+    margin-right: 10px;
+  }
+  
+  .appointment-holder button {
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .dashboard {
+      flex-direction: column; /* Stack navigation and header vertically on small screens */
+    }
+  
+    .admin-panel {
+      width: 100%; /* Make the navigation panel full width */
+      align-items: center; /* Center align items in navigation */
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .menu-list .dash,
+    .menu-list .appo,
+    .menu-list .sched,
+    .menu-list .sett {
+      width: 100%; /* Make menu items full width on small screens */
+      margin-left: 0; /* Remove left margin */
+    }
+  
+    .content {
+      flex-direction: column; /* Stack content vertically */
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .content .main-appo  {
+      margin: 10px; /* Reduce margin for smaller screens */
+    }
+  
+    .profile {
+      margin: 10px 0; /* Add margin to the profile picture */
+    }
+  
+    .logo-text-container-appo {
+      flex-direction: column; /* Stack logo and text vertically */
+      text-align: center; /* Center align text */
+      gap: 10px; /* Adjust the gap between logo and text */
+    }
+  
+    .logo-container-appo img {
+      width: 50px; /* Reduce logo size for smaller screens */
+      height: 50px; /* Reduce logo size for smaller screens */
+    }
+  
+    .text-container-appo .second-h1 {
+      font-size: 18px; /* Reduce font size for smaller screens */
+    }
+  
+    .upperheader {
+      padding: 10px; /* Reduce padding for smaller screens */
+      height: auto; /* Allow header height to adjust based on content */
+    }
+  
+    .bg {
+      display: none; /* Hide background image on smaller screens */
+    }
+  
+    .container-appo .cm,
+    .container-appo .pp,
+    .container-appo .ms,
+    .container-appo .fa {
+      width: 100%; /* Make the content boxes full width on small screens */
+    }
+  
+    .main-appo   .info {
+      height: auto; /* Allow info boxes to adjust height based on content */
+    }
+  
+    .container-appo .greport {
+      margin: 10px; /* Reduce margin for the report view */
+      height: auto; /* Allow report view height to adjust based on content */
+    }
+  
+    /* Additional styles for making .content responsive */
+    .content {
+      flex: 1; /* Allow content to grow and fill the available space */
+    }
+  
+    .content .main-appo  {
+      height: auto; /* Allow main content to adjust height based on content */
+    }
+  }
+  

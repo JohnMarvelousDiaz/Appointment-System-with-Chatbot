@@ -1,0 +1,775 @@
+/* Main container for the dashboard */
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Space between navigation and header */
+    background-size: cover;
+    background-color: #ffffffbe;
+    background-image: url(../img/bg.png);
+  }
+  
+  
+  .dashboard h3 {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .header .togg p {
+    margin-left: 20px;
+    font-size: 12px;
+    text-align: -15px;
+  }
+
+  .header {
+    height: 110px;
+    border-bottom: 2px solid #999;
+  }
+  
+  /* Navigation menu (Left Side) */ 
+  .admin-panel {
+    background-color:rgb(105, 16, 16);
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    border-right: 5px solid rgb(134, 15, 15);
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+  }
+  
+  .admin-panel .profile {
+    width: 80px;
+    height: 80px;
+    background-color: #fff; /* Background color for the profile */
+    border-radius: 50%; /* Create a circular profile image */
+    margin-bottom: 20px;
+    margin-left: 60px;
+    align-items: center;
+  }
+
+  .admin-panel .profile h3 {
+    font-size: 20px;
+  }
+  
+  .menu-heading {
+    margin-bottom: 20px;
+    font-size: 18px;
+    left: 0;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .menu-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: none;
+    color: #444;
+    cursor: pointer; 
+    font-size: 16px; 
+    text-align: left; /* Align text to the left */
+  }
+  
+  
+  
+  .admin-panel #schedule {
+    padding: 20px 103px;
+    background-color:#fff;
+    margin-left: -20px;
+  
+  }
+  
+  .admin-panel #appointment {
+    padding: 20px 92px;
+    background-color: #FFF;
+    margin-left: -20px;
+  
+  }
+  
+  .admin-panel #setting {
+    padding: 20px 108px;
+    background-color: #fff;
+    margin-left: -20px;
+  
+  }
+  
+  .menu-button:hover {
+    background-color: #fff; /* Background color when hovered */
+  }
+  
+  Router li{
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Add these styles to your CSS */
+  .menu-list {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+  }
+  
+  .menu-list .dash {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: underline;
+    width: 160px; /* Adjust the width as needed */
+    min-width: 249px; /* Ensure a minimum width */
+    max-width: 249px; /* Ensure a maximum width */
+    /* Other styling properties */
+    padding: 20px 15px 20px 15px; /* Optional padding to control the content spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    /* Additional styles as needed */
+    background-color: #222;
+    height: 30px;
+    font-size: 12px;
+    margin: 0 10px 20px 0;
+    margin-left: -20px;
+    color: #fff; /* Inherit text color */
+  }
+  
+  .menu-list .dash a {
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+  .menu-list .appoi {
+    display: flex;
+    align-items: center;
+    width: 200px; /* Adjust the width as needed */
+    min-width: 248px; /* Ensure a minimum width */
+    max-width: 248px; /* Ensure a maximum width */
+    /* Other styling properties */
+    padding: 20px 15px 20px 15px; /* Optional padding to control the content spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    /* Additional styles as needed */
+    background-color:#fff;
+    height: 10px;
+    font-size: 12px;
+    margin: 0 10px 20px 0;
+    font-weight: bold;
+    margin-left: -20px;
+    align-items: center;
+    color: #444;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+  }
+
+  .menu-list .appoi:hover {
+    background-color: #888;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-list .appoi a {
+    text-decoration: none;
+    color: #444; /* Inherit text color */
+    padding-right: 120px;
+  }
+
+  .menu-list .appoi a:hover {
+    text-decoration: none;
+    color: #fff; /* Inherit text color */
+
+  }
+  
+  
+  .menu-list .sched {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 200px; /* Adjust the width as needed */
+    min-width: 248px; /* Ensure a minimum width */
+    max-width: 248px; /* Ensure a maximum width */
+    /* Other styling properties */
+    padding: 20px 15px 20px 15px; /* Optional padding to control the content spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    /* Additional styles as needed */
+    background-color:#fff;
+    height: 20px;
+    font-size: 12px;
+    margin: 0 10px 20px 0;
+    margin-left: -20px;
+    transition: .3s ease-in-out;
+  }
+
+  .menu-list .sched:hover {
+    background-color: #888;
+    color: #fff;
+  }
+  
+  .menu-list .sched a {
+    text-decoration: none;
+    padding-right: 120px;
+    color: #444;
+  }
+  .menu-list .sched a:hover {
+    text-decoration: none;
+    color: #fff; /* Inherit text color */
+  }
+  
+  .menu-list .sett {
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 200px; /* Adjust the width as needed */
+    min-width: 248px; /* Ensure a minimum width */
+    max-width: 248px; /* Ensure a maximum width */
+    /* Other styling properties */
+    padding: 20px 15px 20px 15px; /* Optional padding to control the content spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    /* Additional styles as needed */
+    background-color:#fff;
+    height: 10px;
+    font-size: 16px;
+    margin: 0 10px 20px 0;
+    margin-left: -20px;
+    color: #444;
+    transition: .3s ease-in-out;
+  }
+
+  .menu-list .sett:hover {
+    background-color: #888;
+    color: #fff;
+  }
+  
+  .menu-list .sett button {
+    padding-right: 120px;
+    text-decoration: none;
+    color: #444;
+
+  }
+
+  .menu-list .sett button:hover {
+    text-decoration: none;
+    color: #fff; /* Inherit text color */
+  }
+  
+  /* Add this CSS code to your AdminPanel.css file */
+  
+  /* Style for the menu container */
+  .admin-panel nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for each menu item */
+  .menu-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none; /* Remove underline from links */
+    list-style: none; /* Remove list bullet points */
+  }
+  
+  /* Style for icons within menu items */
+  .menu-button svg {
+    margin-right: 10px; /* Adjust spacing between icon and text */
+  }
+  
+  
+  
+  
+  /* AdminPanel.css */
+  
+  .content { 
+    flex-direction: column;
+    flex: 2; 
+    background-color: #fff; 
+    display: flex;
+    width: 60%;
+    height: 15vh;
+  }
+  
+  .content .main-admin {
+    margin: 10px 20px 20px 20px;
+    height: 70vh;
+    color: #fff;
+  }
+  
+  /* Header (Right Side) */
+  
+  /* Logo container */
+  
+  
+  .profile img {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .logo-text-container {
+    display: flex;
+    align-items: center; 
+    background-color: #333;
+    color: #fff;
+    gap: 20px; 
+  }
+  
+  .logo-container img {
+    width: 70px; 
+    height: 70px; 
+  }
+  
+  .text-container {
+    color: #333; 
+    border-bottom: 2px solid #444;
+    
+  }
+  
+  .text-container h1 {
+    font-size: 18px;
+    font-weight: 350;
+    margin: 0; /* Remove default margins for h1 elements */
+  }
+  .text-container .second-h1 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-right: 25px; /* Remove default margins for h1 elements */
+  }
+  
+  .togg {
+    margin: 0;
+    padding: 0 ;
+    top: 0;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  
+  li {
+    list-style: none;
+  }
+  
+  .upperheader {
+    display: flex;
+    border-bottom: 1px solid #444;
+    padding: 20px;
+    height: 7vh;
+    width: 100%;
+  }
+  
+  /* CSS for horizontal line below text-container */
+  hr {
+    border-top: 1px solid #333; /* Adjust the line color and style as needed */
+    width: max-content;
+    display: flex;
+    margin-top: 120px; /* Adjust the spacing between the text-container and line */
+  }
+  
+  .bg {
+    background-color: #fff; /* Background color for the header */
+    align-items: center;
+    position: absolute; /* Position the image absolutely within the header */
+    z-index: 0;
+  }
+  
+  .container-admin {
+    white-space: nowrap; /* Prevent line breaks */
+    
+  }
+  
+.cm,
+  .pp,
+  .ms,
+  .fas
+  {
+    display: inline-flex; /* Display them in a single line */
+    width: 20%; /* Adjust the width as needed */
+    height: 100px;
+    width: 33vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1px;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #fff; /* Set the background color */
+    box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.5);
+  }
+
+  .cm {
+    background-color: #0056b3;
+  }
+  .pp {
+    background-color: #db7705;
+  }
+
+  .ms {
+    background-color: darkred;
+  }
+
+  .fas {
+    background-color: green;
+  }
+
+
+  .main-admin .cm,.pp,.ms, .fas{
+    margin-top: 20px;
+    border: 3px solid #fff;
+  }
+
+  .main-admin .fas{
+    margin-top: 20px;
+    line-height: 1.4;
+    border: 3px solid #fff;
+  }
+
+  .cm h2 {
+    text-align: right;
+    font-weight: bold;
+    font-size: 46px;
+    margin-right: 15px;
+  }
+  .pp h2 {
+    text-align: right;
+    font-weight: bold;
+    font-size: 46px;
+    margin-right: 15px;
+  }
+
+  .ms h2 {
+    text-align: right;
+    font-weight: bold;
+    font-size: 46px;
+    margin-right: 15px;
+  }
+
+  .fas h2 {
+    text-align: right;
+    font-weight: bold;
+    font-size: 46px;
+    margin-right: 15px;
+  }
+  
+  .main-admin .info {
+    bottom: 0;
+    background-color: rgb(158, 10, 10);
+    height: 35px;
+  }
+  .main-admin  p{
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    font-weight: bolder;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center; /* To vertically center the content */
+    width: 100%;
+  }
+  
+  .greport,
+  .cdonut {
+    flex: 1; /* Distribute available space equally */
+  }
+  .container-admin .greport {
+    border: 4px solid #222;
+    text-align: center;
+    margin: 35px 10px 15px 55px;
+    min-width: 620px;
+    max-width: 620px;
+    height: 360px;
+    color: #000;
+    width: 500px;
+    background-color: #fff; /* Set the background color */
+    box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.5);
+
+  }
+
+
+
+  .greport, .cdonut, h1 {
+    font-size: 20px;
+  }
+  .container-admin  .cdonut {
+    border: 4px solid #222;
+    text-align: center;
+    margin: 35px 10px 15px 50px;
+    min-width: 360px;
+    max-width: 360px;
+    height: 320px;
+    width: 550px;
+    background-color: #fff; 
+    box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.5);
+  }
+
+  .chart-title {
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+
+
+  /* Dropdown container styles */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown button styles */
+  .dropdown-button {
+    background-color: transparent;
+    color: #444;
+    border: none;
+    padding: 4px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .dropdown-button button {
+    background-color: transparent;
+    color: #444;
+    border: none;
+    padding: 4px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown content container styles */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent; /* White background */
+    color: #444; /* #444 text color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    padding: 15px;
+    margin-left: -10px;
+    border: 2px solid red;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  /* Show the dropdown content when the dropdown button is hovered */
+  .dropdown-container:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+  }
+
+  .togg p {
+    font-size: 18px;
+  }
+
+  .cm, .pp, .ms, .fas p {
+    text-align: left;
+    margin-right: 10px;
+    padding: 0;
+    top: -25px;
+    line-height: -2;
+    font-weight: bolder;
+  }
+
+  .cm p {
+    position: relative;
+    top: -25px;
+  }
+
+  .pp p {
+    position: relative;
+    top: -25px;
+  }
+
+  .ms p {
+    position: relative;
+    top: -25px;
+  }
+
+  .fas p {
+    text-align: left;
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 0;
+    position: relative;
+    top: -25px;
+    line-height: -2;
+    font-weight: bold;
+  }
+  .cm h1 {
+    text-align: right;
+    margin-bottom: -43px;
+    font-size: 67px;
+    font-weight: bolder;
+    font-family: Century Gothic;
+  }
+  .pp h1 {
+    text-align: right;
+    margin-bottom: -43px;
+    font-size: 67px;
+    font-weight: bolder;
+    font-family: Century Gothic;
+  }
+  .ms h1 {
+    text-align: right;
+    margin-bottom: -43px;
+    font-size: 67px;
+    font-weight: bolder;
+    font-family: Century Gothic;
+  }
+  .fas h1 {
+    text-align: right;
+    margin-bottom: -43px;
+    font-size: 67px;
+    font-weight: bolder;
+    font-family: Century Gothic;
+  }
+  
+  .footer {
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer p {
+  padding-top: 10px;
+  line-height: 1px;
+  font-weight: bold;
+}
+
+/*Print*/
+.print button {
+  background-color: #33B864;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.print button:hover {
+  background-color: #2e995f;
+}
+
+/*Print POsition*/
+.togg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.togg p {
+  margin: 0;  /* Remove default margin */
+}
+
+.togg button {
+  background-color: #33B864;
+  color: #fff;
+  padding: 4px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border: 3px solid #555;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-top: -6px;
+}
+
+.togg button:hover {
+  background-color: #2e995f;
+}
+
+
+  
+  
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .dashboard {
+      flex-direction: column; /* Stack navigation and header vertically on small screens */
+    }
+  
+    .admin-panel {
+      width: 100%; /* Make the navigation panel full width */
+      align-items: center; /* Center align items in navigation */
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .menu-list .dash,
+    .menu-list .appoi,
+    .menu-list .sched,
+    .menu-list .sett {
+      width: 100%; /* Make menu items full width on small screens */
+      margin-left: 0; /* Remove left margin */
+    }
+  
+    .content {
+      flex-direction: column; /* Stack content vertically */
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .content .main-admin {
+      margin: 10px; /* Reduce margin for smaller screens */
+    }
+  
+    .profile {
+      margin: 10px 0; /* Add margin to the profile picture */
+    }
+  
+    .logo-text-container {
+      flex-direction: column; /* Stack logo and text vertically */
+      text-align: center; /* Center align text */
+      gap: 10px; /* Adjust the gap between logo and text */
+    }
+  
+    .logo-container img {
+      width: 50px; /* Reduce logo size for smaller screens */
+      height: 50px; /* Reduce logo size for smaller screens */
+    }
+  
+    .text-container .second-h1 {
+      font-size: 18px; /* Reduce font size for smaller screens */
+    }
+  
+    .upperheader {
+      padding: 10px; /* Reduce padding for smaller screens */
+      height: auto; /* Allow header height to adjust based on content */
+    }
+  
+    .bg {
+      display: none; /* Hide background image on smaller screens */
+    }
+  
+    .container-admin  .cm,
+    .container-admin  .pp,
+    .container-admin  .ms,
+    .container-admin  .fas {
+      width: 100%; /* Make the content boxes full width on small screens */
+    }
+  
+    .main-admin .info {
+      height: auto; /* Allow info boxes to adjust height based on content */
+    }
+  
+    .container-admin  .greport {
+      height: auto; /* Allow report view height to adjust based on content */
+    }
+  
+    /* Additional styles for making .content responsive */
+    .container-admin  {
+      flex: 1; /* Allow content to grow and fill the available space */
+    }
+  
+    .container-admin  .main-admin {
+      height: auto; /* Allow main content to adjust height based on content */
+    }
+  }
+  

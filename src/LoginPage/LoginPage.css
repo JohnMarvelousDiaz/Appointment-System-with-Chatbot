@@ -1,0 +1,349 @@
+.loginbody {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  background-image: url('../images/bg.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.holder {
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin-top: 20vh;
+}
+
+
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.container {
+  height: 65vh;
+  width: 25vw;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 4vh 3vw;
+}
+
+
+
+.container button {
+  text-align: center;
+}
+
+.cictlogologin img {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  height: 20vh;
+}
+
+.container input[type=text],
+input[type=password], .email {
+  background-color: transparent;
+  border: .1vh solid white;
+  margin-bottom: 2.5vh;
+  width: 19vw;
+  height: 5.5vh;
+  padding-left: 2.2vw;
+  color: white;
+  position: relative;
+}
+
+span {
+  border: none;
+}
+
+.container i {
+  position: relative;
+}
+
+.container .login-label {
+  font-size: 4vh;
+  margin-bottom: 4vh;
+  padding-top: 1vh;
+}
+
+.container .register-label {
+  font-size: 4vh;
+  margin-bottom: 2vh;
+  padding-top: 1vh;
+}
+
+.input-ic-user {
+  margin-top: 4vh;
+}
+
+.input-ic-user,
+.input-ic-pass {
+  font-size: 2vh;
+}
+
+.input-ic-user i {
+  display: block;
+  position: relative;
+  top: -6.5vh;
+  left: .3vw;
+  width: 1.6vw;
+  height: 1.6vh;
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+.input-ic-pass i {
+  display: block;
+  position: relative;
+  top: -6.3vh;
+  left: .3vw;
+  width: 1.6vw;
+  height: 1.6vh;
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+.container .btnLogin {
+  width: 19vw;
+  position: relative;
+  top: 1vh;
+  display: flex;
+}
+
+.container .btnRegister {
+  position: relative;
+  display: flex;
+  width: 19vw;
+  
+}
+
+.container .remember,
+.label-remember {
+  float: left;
+  position: relative;
+  top: 1.75vh;
+}
+
+.container .label-remember {
+  position: relative;
+  top: .9vh;
+}
+
+.container .forgot-text {
+  position: relative;
+  top: 5vh;
+  float: left;
+  text-align: left;
+}
+.container .forgot-link {
+  position: relative;
+  top: 6vh;
+  font-size: 2vh;
+  float: left;
+  text-align: left;
+}
+
+hr{
+  text-decoration: dotted;
+  position: relative;
+  top: 30vh;
+}
+.create-account{
+  position: relative;
+  top: 3.5vh;
+  float: left;
+  text-align: left;
+}
+.forgot-pass{
+  position: relative;
+  top: 5vh;
+  float: left;
+  text-align: left;
+}
+.create-account-link{
+  position: relative;
+  top: 4vh;
+  float: center;   
+  font-size: 1.99vh;
+  border: none;
+  background-color: #45b6af;
+  color: white;
+  height: 3.5vh;
+  width: 19vw;
+}
+
+.right{
+  margin-top: 4px;
+  
+}
+
+/* @media (max-width: 768px) {
+  .container {
+      width: 90vw;
+      padding: 3vh 2vw; 
+  }
+
+  .cictlogologin img {
+      height: 15vh; 
+  }
+
+  .container input[type=text],
+  .container input[type=password] {
+      width: 90%; 
+      padding-left: 2%; 
+  }
+
+  .input-ic-user i,
+  .input-ic-pass i {
+      top: -4vh; 
+      font-size: 2vh; 
+  }
+
+  .container .btnLogin {
+      top: 0.5vh; 
+  }
+
+  .container .remember,
+  .label-remember {
+      top: 1vh; 
+  }
+
+  .container .forgot-text,
+  .container .forgot-link {
+      top: 4vh; 
+      font-size: 1.5vh; 
+  }
+
+  hr {
+      top: 20vh;
+  }
+
+  .create-account {
+      top: 5vh; 
+  }
+
+  .create-account-link {
+      top: 6vh; 
+      font-size: 1.5vh; 
+  }
+
+} */
+@media screen and (max-width: 768px) {
+  .navbar {
+    font-size: 14px;
+  }
+
+  .logo-size {
+    height: 3.5vw;
+    width: 7.5vh;
+  }
+
+  .holder {
+    padding: 10px;
+
+  }
+
+  .container {
+    font-size: 14px;
+    width: 80%;
+    height: 65vh;
+  }
+
+  .container .float-start {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .container .btnLogin {
+    width: 35%;
+  }
+
+  .container .create-account-link {
+    width: 55%;
+    left: 0;
+  }
+
+  .container input {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .container span{
+    text-align: center;
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+  }
+
+  .login-label {
+    font-size: 18px;
+  }
+
+  .input-ic-user,
+  .input-ic-pass {
+    margin-bottom: 10px;
+    width: 40%;
+  }
+
+  .input-ic-user input {
+   width: 250%;
+   font-size: 15px;
+   text-align: left;
+  }
+
+  .input-ic-pass input {
+    width: 250%;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .holder .input-ic-user input {
+    width: 250%;
+    font-size: 15px;
+    text-align: left;
+   }
+ 
+   .holder .input-ic-pass input {
+     width: 250%;
+     font-size: 15px;
+     text-align: left;
+   }
+
+  .holder .name input {
+    width: 112%;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .btnLogin {
+    font-size: 16px;
+  }
+  
+    .loginbody img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .container .create-account {
+    font-size: 14px;
+  }
+
+  .container .create-account-link {
+    float: left;
+    margin-right: 100px;
+  }
+
+  .create-account-link {
+    font-size: 16px;
+  }
+
+  .forgot-pass {
+    font-size: 14px;
+  }
+}
